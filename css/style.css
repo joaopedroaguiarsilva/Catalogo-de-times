@@ -2,7 +2,7 @@
 
 :root {
     --fote-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --font-titulo: 'LEMONMILK', sans-serif;
+    --font-titulo: Georgia;
 }
 
 * {
@@ -16,23 +16,31 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #9ea2df, #cbc2fd);
+    background: linear-gradient(to bottom, #8b8a8a, #000000);
     font-family: var(--fote-padrao);
 }
 
 header {
-    background: rgb(49, 49, 207);
+    background: linear-gradient(to top, #000, #757474);
     min-height: 120px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     color: white;
     font-family: var(--font-titulo);
-    font-size: 3em;
+    font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in;
+}
+
+header p {
+    padding-top: 20px;
+    color: white;
+    font-family: var(--fote-padrao);
+    font-size: 1em;
     animation: fadeIn 2s ease-in;
 }
 
@@ -126,14 +134,14 @@ main {
 }
 
 footer {
-    background-color: rgb(168, 161, 226);
+    background-color: rgb(20, 19, 27);
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
 }
 
 footer p {
-    color: black;
+    color: white;
     font-weight: bolder;
 }
 
