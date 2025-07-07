@@ -62,8 +62,37 @@ main {
     color: black;
     font-family: var(--font-titulo);
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #333;
     margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.content p strong,
+.content p em {
+    color: #000;
+    font-weight: bold;
+}
+
+.content p em {
+    font-style: italic;
+}
+
+/* Estilo especial para a frase final */
+.frase-final {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
 }
 
 .content img {
@@ -82,18 +111,24 @@ main {
 footer {
     background-color: rgb(20, 19, 27);
     text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 40px;
 }
 
 footer p {
     color: white;
     font-weight: bolder;
+    letter-spacing: 1px;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
@@ -115,5 +150,15 @@ footer p {
 
     .content h2 {
         font-size: 1.5em;
+    }
+
+    .content p {
+        font-size: 1em;
+        padding: 0 5px;
+    }
+
+    .frase-final {
+        font-size: 1.2em;
+        padding: 0 10px;
     }
 }
